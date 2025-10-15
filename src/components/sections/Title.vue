@@ -4,16 +4,17 @@ import { ElIcon } from 'element-plus'
 import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
-const logo = './logo.png'
+const logo = ''
 
 // 标题
-const title = 'Academic Project Page Template'
+
+const title = ': Fine-Grained 3D Part Segmentation from a Few Clicks'
 
 // 标题颜色
 const title_color = '#000000'
 
 // 标题补充，没有则置为''即可
-const title_supp = ' (Vue based)'
+const title_supp = 'PinPoint3D'
 
 // 标题补充颜色
 const title_supp_color = '#42B883'
@@ -25,19 +26,19 @@ const btn_color = '#444444'
 const authors = [
   {
     name: "Your Name",
-    icon: "./icon/junyaohu.jpg",
-    homepage: "https://junyaohu.github.io/",
+    icon: "",
+    homepage: "",
     address_flag: "1,#"
   },
   {
     name: "Anya Forger",
-    icon: "./icon/anya.jpg",
+    icon: "",
     homepage: "https://www.bilibili.com/video/BV1jv4y1P7Bb",
     address_flag: "2,#"
   },
   {
     name: "BugCat Capoo",
-    icon: "./icon/capoo.webp",
+    icon: "",
     homepage: "https://zh.moegirl.org.cn/%E7%8C%AB%E7%8C%AB%E8%99%AB%E5%92%96%E6%B3%A2",
     address_flag: "1,*"
   },
@@ -48,13 +49,13 @@ const addresses = [
   {
     address_flag: "1",
     name: "Home University",
-    icon: "./icon/home.png",
+    icon: "",
     homepage: "https://github.com/hmuniversity"
   },
   {
     address_flag: "2",
     name: "IKUN University",
-    icon: "./icon/ikun.avif",
+    icon: "",
     homepage: "https://www.bilibili.com/video/BV178411Y7QB"
   },
 ]
@@ -67,12 +68,8 @@ const con_and_corresponding_author =
 const news = "🔥 [2024-12-15] This template project is still under development."
 
 // 强调内容
-const emphases = [
-  "🎉 [ABCD 2024] Poster",
-  "🥰 欢迎关注“减论”微信公众号/B站/知乎/小红书",
-  "传递人工智能算法科普教育的减约理解",
-  "提升信息效率及认知维度"
-]
+const emphases = []
+
 
 // 提供引导资料链接
 const buttons = [
@@ -83,17 +80,12 @@ const buttons = [
   },
   {
     disabled: true,
-    name: "中译版",
-    component: Document,
-  },
-  {
-    disabled: false,
     name: "Code",
     link: "https://github.com/JunyaoHu/academic-project-page-template-vue",
     component: Files,
   },
   {
-    disabled: false,
+    disabled: true,
     name: "Demo",
     link: "https://junyaohu.github.io/academic-project-page-template-vue",
     component: MagicStick,
@@ -103,23 +95,23 @@ const buttons = [
     name: "Poster",
     component: Picture,
   },
-  {
-    disabled: true,
-    name: "Slide",
-    component: DataAnalysis,
-  },
-  {
-    disabled: false,
-    name: "Video (减论)",
-    link: "https://www.bilibili.com/video/BV15XkgYiE73/",
-    component: Film,
-  },
-  {
-    disabled: false,
-    name: "Video (Tutorial)",
-    link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
-    component: Film,
-  },
+  // {
+  //   disabled: true,
+  //   name: "Slide",
+  //   component: DataAnalysis,
+  // },
+  // {
+  //   disabled: false,
+  //   name: "Video (减论)",
+  //   link: "https://www.bilibili.com/video/BV15XkgYiE73/",
+  //   component: Film,
+  // },
+  // {
+  //   disabled: false,
+  //   name: "Video (Tutorial)",
+  //   link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
+  //   component: Film,
+  // },
 ]
 
 </script>
@@ -143,9 +135,9 @@ const buttons = [
     <el-row justify="center">
       <el-col :span="20">
         <h1 class="paper-title">
-          <span v-if="title" :style="{color:title_color}"> {{ title }}</span>
-          <span v-if="title_supp" :style="{color:title_supp_color}"> {{ title_supp }}</span>
-        </h1>
+            <span v-if="title_supp" :style="{color:title_supp_color}"> {{ title_supp }}</span>
+            <span v-if="title" :style="{color:title_color}"> {{ title }}</span>
+          </h1>
       </el-col>
     </el-row>
 
@@ -211,6 +203,11 @@ const buttons = [
   font-size: 42px;
   margin: 32px;
   text-align: center;
+}
+
+.highlight-part {
+  color: #42B883; /* 你想要的颜色 */
+  font-weight: bold;
 }
 
 /* 姓名和地址按钮 */
@@ -296,6 +293,7 @@ const buttons = [
   box-shadow: #ced3dc 0px 0px 3px 2px;
   margin-top: 40px;
 }
+
 
 /* 手机端链接样式处理 */
 a:-webkit-any-link {

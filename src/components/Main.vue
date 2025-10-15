@@ -23,19 +23,19 @@ export default {
     Abstract,
     Markdown,
     BibTeX,
-    Carousel,
+    // Carousel,
     Video,
-    ImageSlider,
+    // ImageSlider,
     ImageSliderInner,
-    ImageSelector,
-    Echart,
-    Collapse,
-    Table,
-    SeletionForComparison,
-    Comment,
-    Latex,
-    Model3D,
-    GaussianSplats3D
+    // ImageSelector,
+    // Echart,
+    // Collapse,
+    // Table,
+    // SeletionForComparison,
+    // Comment,
+    // Latex,
+    // Model3D,
+    // GaussianSplats3D
   }
 }
 </script>
