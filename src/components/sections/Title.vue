@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 
-import { ElIcon } from 'element-plus'
+import { ElIcon, linkEmits } from 'element-plus'
 import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
@@ -23,24 +23,50 @@ const title_supp_color = '#42B883'
 const btn_color = '#444444'
 
 // 作者清单（包含作者姓名、头像、主页、地址序号）
+// ...existing code...
+// 作者清单（包含作者姓名、头像、主页、地址序号）
 const authors = [
   {
-    name: "Your Name",
+    name: "Bojun Zhang",
     icon: "",
     homepage: "",
-    address_flag: "1,#"
+    address_flag: "1,2"
   },
   {
-    name: "Anya Forger",
+    name: "Hangjian Ye",
     icon: "",
-    homepage: "https://www.bilibili.com/video/BV1jv4y1P7Bb",
-    address_flag: "2,#"
+    homepage: "",
+    address_flag: "1,2"
   },
   {
-    name: "BugCat Capoo",
+    name: "Hao Zheng",
     icon: "",
-    homepage: "https://zh.moegirl.org.cn/%E7%8C%AB%E7%8C%AB%E8%99%AB%E5%92%96%E6%B3%A2",
-    address_flag: "1,*"
+    homepage: "",
+    address_flag: "1,2,#"
+  },
+  {
+    name: "Jianzheng Huang",
+    icon: "",
+    homepage: "",
+    address_flag: "1"
+  },
+  {
+    name: "Zhengyu Lin",
+    icon: "",
+    homepage: "",
+    address_flag: "1"
+  },
+  {
+    name: "Zhenhong Guo",
+    icon: "",
+    homepage: "",
+    address_flag: "1"
+  },
+  {
+    name: "Feng Zheng",
+    icon: "",
+    homepage: "",
+    address_flag: "1,2,*"
   },
 ]
 
@@ -48,21 +74,21 @@ const authors = [
 const addresses = [
   {
     address_flag: "1",
-    name: "Home University",
+    name: "Southern University of Science and Technology",
     icon: "",
-    homepage: "https://github.com/hmuniversity"
+    homepage: ""
   },
   {
     address_flag: "2",
-    name: "IKUN University",
+    name: "Spatialtemporal AI.",
     icon: "",
-    homepage: "https://www.bilibili.com/video/BV178411Y7QB"
+    homepage: ""
   },
 ]
 
 // 共一和通讯提示
-const con_and_corresponding_author = 
-  "#: Equal Contribution. *: Corresponding Author."
+const con_and_corresponding_author = "#: Project lead. *: Corresponding author."
+// ...existing code...
 
 // 最新消息
 const news = "🔥 [2024-12-15] This template project is still under development."
@@ -74,7 +100,8 @@ const emphases = []
 // 提供引导资料链接
 const buttons = [
   {
-    disabled: true,
+    disabled: false,
+    link: "https://arxiv.org/abs/2509.25970",
     name: "Paper",
     component: Document,
   },
@@ -120,11 +147,11 @@ const buttons = [
   <div>
 
     <!-- 最新消息提示 -->
-    <el-row justify="center">
+    <!-- <el-row justify="center">
       <el-col :span="24">
         <el-alert title="🔥 This template is still under development." type="success" />
       </el-col>
-    </el-row>
+    </el-row> -->
 
     <!-- 文章logo -->
     <el-row v-if="logo" justify="center">

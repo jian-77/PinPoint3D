@@ -3,11 +3,14 @@ export default {
   data() {
     return {
       bibtex: [
-        "@article{junyaohu2023template,",
-        "    title={Academic Project Page Template Vue},",
-        "    author={Hu, Junyao},",
-        "    journal={GitHub},",
-        "    year={2023}",
+        "@misc{zhang2025pinpoint3dfinegrained3dsegmentation,",
+        "title={PinPoint3D: Fine-Grained 3D Part Segmentation from a Few Clicks}, ",
+        "author={Bojun Zhang and Hangjian Ye and Hao Zheng and Jianzheng Huang and Zhengyu Lin and Zhenhong Guo and Feng Zheng},",
+        "year={2025},",
+        "eprint={2509.25970},",
+        "archivePrefix={arXiv},",
+        "primaryClass={cs.CV},",
+        "url={https://arxiv.org/abs/2509.25970},",
         "}",
       ],
     }

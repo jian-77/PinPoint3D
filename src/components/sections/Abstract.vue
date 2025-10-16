@@ -16,7 +16,7 @@ import abstract from '../mds/abstract.mdx';
     <el-row justify="center" style="margin-bottom: 20px;">
   <el-col :xs="24" :sm="20" :md="16" :lg="12" :xl="12">
     <el-image
-      src="PinPoint3D/public/pictures/intro.jpg"
+      src="./pictures/intro.jpg"
       fit="cover"
       style="width: 100%; max-width: 400px; border-radius: 10px; display: block; margin: 0 auto;"
       alt="示例图片"
