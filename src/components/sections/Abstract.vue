@@ -25,7 +25,7 @@ import abstract from '../mds/abstract.mdx';
 </el-row>
 
     <el-row justify="center">
-        <el-col :xs="24" :sm="20" :md="16" :lg="12" :xl="12">
+        <el-col :xs="24" :sm="20" :md="16" :lg="12" :xl="12" style="text-align: justify;">
             <abstract />
         </el-col>
     </el-row>
