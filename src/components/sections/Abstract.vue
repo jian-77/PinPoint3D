@@ -18,7 +18,7 @@ import abstract from '../mds/abstract.mdx';
     <el-image
       src="./pictures/intro.jpg"
       fit="cover"
-      style="width: 100%; max-width: 400px; border-radius: 10px; display: block; margin: 0 auto;"
+      style="width: 100%; max-width: 600px; border-radius: 10px; display: block; margin: 0 auto;"
       alt="示例图片"
     />
   </el-col>

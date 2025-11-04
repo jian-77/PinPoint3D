@@ -23,7 +23,7 @@ export default defineConfig({
       ],
     }),
   ],
-  base:'/',
+  base:'/PinPoint3D',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
